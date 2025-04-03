@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanishka - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Kanishka's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Kanishka</span>
+                <div>and I am a passionate</div>
+                <span id="element">Web Developer</span>
+                <div class="buttons">
+                    <button onclick="location.href='/Kanishka CV.pdf'" class="btn">Download Resume</button>
+                    <a href="https://github.com/kanishka-garg">
+                        <button class="btn">Visit Github</button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="./Web Developer img.png" alt="">
+            </div>
+        </section>
+        <hr>
+
+        <!-- Skills Section -->
+        <section class="skillsSection" id="skills">
+            <div class="skills-heading">
+                <h1>Skills</h1>
+                <span class="text-gray">What I Know</span>
+            </div>
+            <br>
+
+            <div class="skills-container">
+                <div class="skill"><a href="#cpp"><img src="logo.jpg" alt="cb"></a><p>C++</p></div>
+                <div class="skill"><a href="#html"><img src="HTML logo.png" alt="HTML"></a><p>HTML</p></div>
+                <div class="skill"><a href="#css"><img src="CSS logo.jpg" alt="CSS"></a><p>CSS</p></div>
+                <div class="skill"><a href="#js"><img src="Js logo.jpg" alt="JavaScript"></a><p>JavaScript</p></div>
+                <div class="skill"><a href="#react"><img src="react logo.png" alt="React"></a><p>React</p></div>
+                <div class="skill"><a href="#sql"><img src="sql logo.jpg" alt="SQL"></a><p>SQL</p></div>
+                <div class="skill"><a href="#excel"><img src="Microsoft_Office_Excel_(2019–present).svg.png" alt="Excel"></a><p>Excel</p></div>
+                <div class="skill"><a href="#powerbi"><img src="power-bi-microsoft-logo-png_seeklogo-400711.png" alt="Power BI"></a><p>Power BI</p></div>
+            </div>
+        </section>
+
+        
+        <hr>
+
+        <!-- Projects Section -->
+        <section class="secondSection" id="projects">
+            <h1>Projects</h1>
+            <span class="text-gray">What I have Done</span>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="Developer img.png" alt="">
+                    <div class="vertical-title"><b>Stock Market Prediction</b></div>
+                    <div class="vertical-desc">
+                        Developed a stock market prediction system using Python & Neural Networks, analyzing 10 years of historical data.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Developer img.png" alt="">
+                    <div class="vertical-title"><b>Song Recommendation System</b></div>
+                    <div class="vertical-desc">
+                        A system that suggests songs based on user mood & emotions using Machine Learning.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Developer img.png" alt="">
+                    <div class="vertical-title"><b>Food Delivery Website</b></div>
+                    <div class="vertical-desc">
+                        A responsive website built using HTML & CSS for seamless food ordering and tracking.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/mdorayvb" method="POST" class="contact-form" id="contact">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Your Name" autocomplete="off" required minlength="4" id="username" name="username">
+            
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email ID" autocomplete="off" required id="email" name="email"> 
+            
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="4" placeholder="Enter your message"></textarea>
+            
+            <input type="submit" value="Submit">
+        </form>
+
+        <footer class="footer">
+            <p>&copy; 2025 All rights reserved | Kanishka Garg</p>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', ' &amp; Problem Solver.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
